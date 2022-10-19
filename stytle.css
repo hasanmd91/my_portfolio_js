@@ -8,12 +8,46 @@
 }
 
 :root {
-  --primary-color: #01b0d3;
-  --secondary-color: #242333;
-  --Tertiary-color: #ffffff;
-  --navbar-color: #aba8a9;
-  --buttonHoverColor: #d8dfee;
+  --primary-color: rgb(243, 94, 40);
+  --textColor: #e1e2e2;
+  --backGroundColor: #1d2228;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background: linear-gradient(-45deg, #1d2228, #30363d);
+  animation: gradient 7s ease infinite;
+  background-size: 400% 400%;
+  color: var(--textColor);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+section {
+  height: 100vh;
+}
+
 /* Navbar design starts here*/
 
 header {
@@ -22,7 +56,18 @@ header {
   left: 0;
   width: 100%;
   z-index: 9999;
-  background-color: var(--secondary-color);
+  background: var(--backGroundColor);
+  transition: all 300ms ease-in-out;
+  padding: 10px;
+}
+
+.scroll-down header {
+  /* scroll events to hide the nav when scrolling down*/
+  transform: translate3d(0px, -100%, 0px);
+}
+
+.scroll-up header {
+  filter: drop-shadow(1px 3px 1px var(--backGroundColor));
 }
 
 nav {
@@ -31,7 +76,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 50px;
 }
 
 ul {
@@ -50,7 +94,7 @@ ul li a {
 
 ul li a:hover {
   transition: 0.3s ease;
-  background-color: var(--buttonHoverColor);
+  background-color: var(--textColor);
 }
 
 .logo {
@@ -75,14 +119,14 @@ ul li a:hover {
 }
 
 .burger:hover {
-  background-color: var(--buttonHoverColor);
+  background-color: var(--textColor);
 }
 
 .nav-active {
   transform: translatex(0);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -91,7 +135,7 @@ ul li a:hover {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: var(--secondary-color);
+    background-color: var(--backGroundColor);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,13 +173,66 @@ ul li a:hover {
 
 /* hero design starts here*/
 
+.hero_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.info_container {
+  height: 50vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info_container > div {
+  color: var(--textColor);
+}
+.band1 {
+  font-size: 30px;
+  line-height: normal;
+}
+
+.band2 {
+  font-size: 80px;
+  line-height: normal;
+}
+
+.info_container > div > p > span {
+  color: var(--primary-color);
+}
+
+.hero_pic_container {
+  height: 50vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_pic {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero_pic > img {
+  width: 100%;
+}
+
 aside {
   display: flex;
   flex-direction: column;
   position: fixed;
   gap: 40px;
-  top: 400px;
+  top: 170px;
   right: 20px;
+  background-color: var(--textColor);
+  padding: 39px 12px;
+  border-radius: 50px;
 }
 
 aside > img {
@@ -144,4 +241,43 @@ aside > img {
   border-radius: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30px;
+  }
+  .info_container {
+    margin-top: 60px;
+  }
+  .band1 {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .band2 {
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 10px;
+    top: 450px;
+    right: 35px;
+  }
+  aside > img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+  }
+}
+
 /* hero design ends here*/
+
+/* About me  design starts here*/
+
+/* About me  design ends here*/
