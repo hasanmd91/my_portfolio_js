@@ -11,6 +11,7 @@
   --primary-color: rgb(243, 94, 40);
   --textColor: #e1e2e2;
   --backGroundColor: #1d2228;
+  --cardColor: #484a4b;
 }
 
 html {
@@ -22,7 +23,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-  background: linear-gradient(-45deg, #1d2228, #30363d);
+  background: linear-gradient(-45deg, #1d2228, #1d2228);
   animation: gradient 7s ease infinite;
   background-size: 400% 400%;
   color: var(--textColor);
@@ -30,6 +31,10 @@ body {
 
 h1 {
   color: var(--primary-color);
+}
+
+p {
+  color: var(--textColor);
 }
 
 @keyframes gradient {
@@ -45,7 +50,7 @@ h1 {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Navbar design starts here*/
@@ -153,19 +158,7 @@ ul li a:hover {
   }
 
   li {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeNavLinks {
-  from {
-    opacity: 0;
-    transform: translatex(50px);
-  }
-
-  to {
     opacity: 1;
-    transform: translatex(0px);
   }
 }
 
@@ -183,7 +176,7 @@ ul li a:hover {
 
 .info_container {
   height: 50vh;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +200,7 @@ ul li a:hover {
 
 .hero_pic_container {
   height: 50vh;
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,5 +272,120 @@ aside > img {
 /* hero design ends here*/
 
 /* About me  design starts here*/
+#AboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.about-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.about-img img {
+  width: 400px;
+  height: 400px;
+}
+
+.about-desc {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-img {
+    width: 100%;
+  }
+  .about-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-desc {
+    width: 100%;
+    padding: 25px 10px;
+    text-align: justify;
+  }
+}
 /* About me  design ends here*/
+
+/* skills design starts here */
+.skill img {
+  width: 110px;
+  height: 100px;
+}
+.skill p {
+  margin: 0.7rem 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill {
+  background-color: var(--cardColor);
+  padding: 2rem;
+  border-radius: 3px;
+  margin: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.skills_group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: space-around;
+  text-align: center;
+  max-width: 900px;
+}
+.skill:nth-child(odd) {
+  background-color: var(--cardColor);
+}
+
+progress[value] {
+  height: 1.5rem;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: var(--primary-color);
+  border-radius: 5px;
+  background-size: 35px 20px;
+}
