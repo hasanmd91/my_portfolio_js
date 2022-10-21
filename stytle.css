@@ -486,7 +486,6 @@ progress[value]::-webkit-progress-value {
   width: 700px;
   padding: 20px;
   border-radius: 8px;
-  position: relative;
 }
 
 .form > div {
@@ -542,6 +541,9 @@ textarea {
   border-radius: 50px;
 }
 
-@media only screen and(max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .form {
+    width: 300px;
+  }
 }
-/* contact design ends here */ ;
+/* contact design ends here */
