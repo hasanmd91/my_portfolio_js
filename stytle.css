@@ -702,9 +702,10 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
 }
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 728px) {
   .grid-gallery > div {
     grid-column: 1/-1;
+    grid-row: inherit;
     height: 300px;
   }
 }
