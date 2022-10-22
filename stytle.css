@@ -19,10 +19,7 @@
 html {
   scroll-behavior: smooth;
 }
-
-body::-webkit-scrollbar {
-  width: 0;
-}
+/* body::-webkit-scrollbar {width: 0;} */
 
 body {
   background: linear-gradient(
@@ -75,6 +72,13 @@ section {
   display: grid;
   place-items: center;
   align-self: center;
+  scroll-snap-align: start;
+}
+
+.portfolio_container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 /* Navbar design starts here*/

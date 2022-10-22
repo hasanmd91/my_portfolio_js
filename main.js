@@ -2,7 +2,7 @@ const ul = document.querySelector("ul");
 const burger = document.querySelector(".burger");
 const navLinks = document.querySelectorAll("li");
 const links = document.querySelectorAll(".link");
-
+const hiddenElements = document.querySelectorAll(".hidden");
 const body = document.body;
 // scroll event
 
@@ -49,5 +49,5 @@ const obeserver = new IntersectionObserver((entries) => {
     }
   });
 });
-const hiddenElements = document.querySelectorAll(".hidden");
+
 hiddenElements.forEach((el) => obeserver.observe(el));
