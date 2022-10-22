@@ -130,13 +130,10 @@ ul li a:hover {
   margin-left: 20px;
   object-fit: cover;
   cursor: pointer;
-}
-.logo a > img {
-  width: 100%;
-}
-
-.logo:hover {
-  border: 2px solid var(--primary-color);
+  background: url("./images/Hero/logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .burger {
@@ -231,7 +228,7 @@ ul li a:hover {
 .hero_pic {
   width: 400px;
   height: 400px;
-  background: url(./images/Hero/web.png);
+  background: url("./images/Hero/web.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
