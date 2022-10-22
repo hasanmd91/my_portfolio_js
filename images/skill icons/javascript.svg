@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="78.562" height="110.589"><path fill="#e6a329" d="M78.562 21.671H0l7.365 79.867 31.912 9.051 31.912-9.051Z" data-name="Path 275"/><path fill="#f1bf22" d="M39.277 28.178v75.643l25.856-7.325 6.29-68.318Z" data-name="Path 276"/><path fill="#fff" d="M59.847 37.976H20.092l-2.769 29.9.057-.186h33.774l-1.1 12.651-10.776 3.1-10.935-3.15-.655-7.657h-9.926l1.416 15.3 20.1 5.706 20.109-5.706 2.769-30.032H26.312l.46-10.006h24.869l.372 5.733h10.01Z" data-name="Path 277"/><path fill="#ebebeb" d="M39.286 37.976H20.092l-2.769 29.9.057-.186h21.905v-9.754H27.71l.46-10.006h11.116ZM27.71 72.639h-9.949l1.416 15.292 20.1 5.7V83.455l-10.935-3.158Z" data-name="Path 278"/><path fill="#231f20" d="M31.638 9.891h-6.994v5.021h12V0h-5ZM53.915.08H41.723V5.3c1.628 1.628 2.477 2.411 4.875 4.769h-4.875v4.76h12.191v-4.752l-4.87-4.769h4.875Z" data-name="Path 279"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 78.6 110.6" style="enable-background:new 0 0 78.6 110.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E6A329;}
+	.st1{fill:#F1BF22;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#EBEBEB;}
+</style>
+<path class="st0" d="M78.6,21.7H0l7.4,79.9l31.9,9.1l31.9-9.1L78.6,21.7z"/>
+<path class="st1" d="M39.3,28.2v75.6l25.9-7.3l6.3-68.3L39.3,28.2z"/>
+<path class="st2" d="M59.8,38H20.1l-2.8,29.9l0.1-0.2h33.8l-1.1,12.7l-10.8,3.1l-10.9-3.2l-0.7-7.7h-9.9l1.4,15.3l20.1,5.7l20.1-5.7
+	l2.8-30H26.3l0.5-10h24.9l0.4,5.7h10L59.8,38z"/>
+<path class="st3" d="M39.3,38H20.1l-2.8,29.9l0.1-0.2h21.9v-9.8H27.7l0.5-10h11.1V38z M27.7,72.6h-9.9l1.4,15.3l20.1,5.7V83.5
+	l-10.9-3.2L27.7,72.6z"/>
+</svg>
