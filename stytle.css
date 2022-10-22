@@ -72,13 +72,6 @@ section {
   display: grid;
   place-items: center;
   align-self: center;
-  scroll-snap-align: start;
-}
-
-.portfolio_container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
 }
 
 /* Navbar design starts here*/
@@ -138,8 +131,12 @@ ul li a:hover {
   object-fit: cover;
   cursor: pointer;
 }
-.logo > img {
+.logo a > img {
   width: 100%;
+}
+
+.logo:hover {
+  border: 2px solid var(--primary-color);
 }
 
 .burger {

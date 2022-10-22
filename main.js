@@ -9,7 +9,9 @@ const body = document.body;
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
+  console.log("first");
   let currentScroll = window.pageYOffset;
+  console.log(currentScroll);
   if (currentScroll <= 0) {
     body.classList.remove("scroll-up");
   }
