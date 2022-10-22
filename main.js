@@ -2,6 +2,7 @@ const ul = document.querySelector("ul");
 const burger = document.querySelector(".burger");
 const navLinks = document.querySelectorAll("li");
 const links = document.querySelectorAll(".link");
+
 const body = document.body;
 // scroll event
 
@@ -36,3 +37,17 @@ navLinks.forEach((link) => {
     ul.classList.toggle("nav-active");
   });
 });
+
+//IntersectionObserver class for section animation
+
+const obeserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => obeserver.observe(el));
