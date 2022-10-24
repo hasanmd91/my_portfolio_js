@@ -478,9 +478,6 @@ progress[value]::-webkit-progress-value {
   box-shadow: rgba(79, 76, 76, 0.3) 0px 19px 38px,
     rgba(29, 28, 28, 0.22) 0px 15px 12px;
 }
-.projectCard:hover {
-  background-color: var(--primary-color);
-}
 
 .projectCardImg {
   display: inline-block;
@@ -504,7 +501,6 @@ progress[value]::-webkit-progress-value {
   background: none;
   border: none;
   color: var(--textColor);
-
   background-color: var(--primary-color);
   padding: 15px;
   border-radius: 5px;
