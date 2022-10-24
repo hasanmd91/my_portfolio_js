@@ -11,7 +11,7 @@
   --primary-color: #f35e28;
   --textColor: #e1e2e2;
   --backGroundColor: #1d2228;
-  --cardColor: #484a4b;
+  --cardColor: #61524a;
   --footerColor: #9c5419;
   --hoverColor: rgb(113, 45, 19);
 }
@@ -110,8 +110,8 @@ ul {
 }
 
 ul li a {
-  font-weight: 900px;
-  font-size: 22px;
+  font-weight: 700px;
+  font-size: 18px;
   text-transform: uppercase;
   padding: 17px 30px;
   border-radius: 3px;
@@ -195,6 +195,7 @@ ul li a:hover {
   align-items: center;
   width: 100%;
   height: 100vh;
+  gap: 50px;
 }
 
 .info_container {
@@ -208,12 +209,12 @@ ul li a:hover {
   color: var(--textColor);
 }
 .band1 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: normal;
 }
 
 .band2 {
-  font-size: 80px;
+  font-size: 70px;
   line-height: normal;
 }
 
@@ -279,6 +280,7 @@ aside > a > img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
   }
 
   .band1 {
@@ -528,8 +530,8 @@ progress[value]::-webkit-progress-value {
 
 .form {
   background-color: #f1f1f1;
-  width: 700px;
-  padding: 20px;
+  width: 600px;
+  padding: 10px;
   border-radius: 8px;
 }
 
