@@ -464,7 +464,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .projectCard {
-  width: 300px;
+  width: 280px;
   height: 450px;
   background-color: var(--cardColor);
   margin: 10px;
@@ -472,10 +472,14 @@ progress[value]::-webkit-progress-value {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 15px;
+  padding: 5px;
   gap: 20px;
+  border-radius: 5px;
   box-shadow: rgba(79, 76, 76, 0.3) 0px 19px 38px,
     rgba(29, 28, 28, 0.22) 0px 15px 12px;
+}
+.projectCard:hover {
+  background-color: var(--primary-color);
 }
 
 .projectCardImg {
